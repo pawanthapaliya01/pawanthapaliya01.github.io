@@ -3,39 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pawan Thapaliya's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Pawan Thapaliya | Computational Neuroscientist</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005f73;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #005f73;
+        }
+        a {
+            color: #0a9396;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #005f73;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #0a9396;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #028090;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to My Personal Website</h1>
-        <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
+<header>
+    <h1>Pawan Thapaliya</h1>
+    <p>Computational Neuroscientist | Applied Physicist</p>
+</header>
+
+<div class="container">
+    <h2>About Me</h2>
+    <p>
         Hi, I'm <strong>Pawan Thapaliya</strong>, a PhD candidate in <strong>Applied Physics</strong> with a specialization in <strong>Computational Neuroscience</strong>. 
         My research focuses on understanding the complex interactions between neuronal and non-neuronal cells under metabolic stress conditions, particularly in the context of ischemic events, epilepsy, and neurodegenerative diseases. 
         I aim to bridge the gap between theoretical neuroscience and translational applications in healthcare.
     </p>
-        <h2>Research Interests</h2>
+
+    <h2>Research Interests</h2>
     <ul>
         <li>Computational modeling of astrocyte function during ischemia</li>
         <li>Neuroinformatics and brain-computer interfaces</li>
         <li>Machine learning applications in EEG signal analysis</li>
         <li>Translational research in stroke, epilepsy, and Alzheimer's disease</li>
     </ul>
-         <h2>Current Research</h2>
+
+    <h2>Current Research</h2>
     <p>
         At <strong>Dr. Ullah's Biophysics Lab</strong>, I'm developing detailed <strong>Markov models</strong> to simulate ion dynamics in astrocytes, focusing on sodium and calcium signaling during chemical ischemia. 
         My research explores how NBCe1 transporters regulate pH during energy deprivation, with implications for therapeutic strategies targeting neurological disorders.
     </p>
-         <h3>Recent Projects:</h3>
+    <h3>Recent Projects:</h3>
     <ul>
         <li>Biophysical modeling of NMDA and AMPA receptor activation</li>
         <li>Analysis of astrocytic sodium dynamics using single-cell simulations</li>
@@ -49,55 +103,33 @@
         <li><strong>Machine Learning:</strong> LSTM, SVM, data analysis, feature extraction from EEG signals</li>
         <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Pandas, NeuroPy</li>
     </ul>
-    </section>
 
-   <section id="projects">
-    <h2>Projects</h2>
+    <h2>Selected Publications and Projects</h2>
     <ul>
-        <li>
-            <a href="https://github.com/pawanthapaliya01/project1">
-                <strong>Project 1: EEG Signal Analysis for Brain Activity Detection</strong>
-            </a><br>
-            Developed a robust pipeline for classifying EEG signals using Long Short-Term Memory (LSTM) networks and Support Vector Machines (SVM).<br>
-            Analyzed a Kaggle dataset from the Harvard Medical School (HMS) to detect harmful brain activity, achieving improved accuracy through advanced feature extraction techniques.<br>
-            This project demonstrated my skills in signal processing, time-series analysis, and machine learning for neurological applications.
-        </li>
-        <li>
-            <a href="https://github.com/pawanthapaliya01/project2">
-                <strong>Project 2: Biophysical Modeling of Astrocytes under Metabolic Stress</strong>
-            </a><br>
-            Constructed detailed biophysical models to simulate astrocyte behavior in response to chemical ischemia.<br>
-            Focused on the role of NMDA and AMPA receptors in regulating sodium and calcium dynamics, and examined the impact of NBCe1 in pH homeostasis.<br>
-            The models provided insights into ATP consumption and ionic signaling heterogeneity between neocortical and hippocampal astrocytes.
-        </li>
-        <li>
-            <a href="https://github.com/pawanthapaliya01/project3">
-                <strong>Project 3: Machine Learning for Neurovascular Interaction Analysis</strong>
-            </a><br>
-            Integrated deep learning models to analyze neurovascular coupling mechanisms, focusing on cellular responses during metabolic stress events like ischemic strokes.<br>
-            Utilized convolutional neural networks (CNNs) and recurrent neural networks (RNNs) to predict neurovascular interactions based on simulated data.<br>
-            Aimed to identify potential biomarkers for neurological disorders and optimize therapeutic strategies using machine learning techniques.
-        </li>
+        <li><strong>Thesis:</strong> "Modeling Astrocyte Responses to Chemical Ischemia: A Computational Approach to Understanding Neurovascular Dynamics"</li>
+        <li><strong>Kaggle Competition:</strong> Harmful Brain Activity Classification - Applied LSTM and SVM techniques for EEG signal analysis</li>
+        <li><strong>Project Portfolio:</strong> Machine learning pipelines for analyzing neuronal and glial interactions during metabolic stress</li>
     </ul>
-</section>
-    <section id="resume">
-        <h2>Resume</h2>
-        <p>
-            You can download my latest resume by clicking the link below:
-        </p>
-        <a href="Pawan_Thapaliya_Resume.pdf" download="Pawan_Thapaliya_Resume.pdf" class="resume-button">
-            Download My Resume
-        </a>
-    </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: pkthapaliya@usf.edu</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/pawan-thapaliya-2a7377125/">linkedin.com/in/pawan-thapaliya-2a7377125</a></p>
-    </section>
+    <h2>Career Goals</h2>
+    <p>
+        I am actively seeking opportunities to apply my interdisciplinary background in computational neuroscience and machine learning to industry and academic settings. 
+        I am particularly interested in roles that involve <strong>neuroengineering</strong>, <strong>biomedical data analysis</strong>, and <strong>computational biology</strong>.
+    </p>
 
-    <footer>
-        <p>&copy; 2024 Pawan Thapaliya. All rights reserved.</p>
-    </footer>
+    <h2>Contact Me</h2>
+    <p>If you're interested in collaborating or have a position that aligns with my skills, please feel free to reach out!</p>
+    <p>Email: <a href="mailto:YourEmail@example.com">YourEmail@example.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank">LinkedIn Profile</a></p>
+    <p>GitHub: <a href="https://github.com/YourGitHubProfile" target="_blank">GitHub Profile</a></p>
+
+    <a class="button" href="link-to-resume.pdf" target="_blank">Download My Resume (PDF)</a>
+</div>
+
+<footer>
+    <p>&copy; 2024 Pawan Thapaliya. All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
