@@ -33,7 +33,7 @@ section {
 }
 
 .profile-photo {
-    border-radius: 100%; /* Keeps it circular */
+    border-radius: 300%; /* Keeps it circular */
     width: 1550px; /* Increase size here */
     height: 1550px; /* Match width for circular shape */
     object-fit: cover; /* Ensures the image fits within dimensions */
