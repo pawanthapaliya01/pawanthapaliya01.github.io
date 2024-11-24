@@ -33,9 +33,9 @@ section {
 }
 
 .profile-photo {
-    border-radius: 300%; /* Keeps it circular */
-    width: 1550px; /* Increase size here */
-    height: 1550px; /* Match width for circular shape */
+    border-radius: 50%; /* Keeps it circular */
+    width: 500px; /* Increase size here */
+    height: 500px; /* Match width for circular shape */
     object-fit: cover; /* Ensures the image fits within dimensions */
     border: 4px solid #004d99; /* Optional: Adjust border size */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Slightly enhance shadow for effect */
