@@ -71,6 +71,16 @@
             background-color: #003366;
         }
 
+        /* Skills List Styling */
+        .skills-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             section {
@@ -140,7 +150,7 @@
 <!-- Skills Section -->
 <section id="skills">
     <h2>Skills and Expertise</h2>
-    <ul>
+    <ul class="skills-list">
         <li><strong>Programming and Tools:</strong> Python (NumPy, SciPy, TensorFlow, Keras, PyTorch), Fortran, Matlab, Kaggle</li>
         <li><strong>Computational Techniques:</strong> Single-cell modeling, Markov kinetics, differential equations, digital signal processing</li>
         <li><strong>Machine Learning:</strong> LSTM, SVM, data analysis, feature extraction from EEG signals</li>
