@@ -23,7 +23,29 @@ section {
     padding: 20px;
     background-color: white;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Profile Picture Styling */
+.profile-container {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.profile-photo {
+    border-radius: 50%; /* Circular picture */
+    width: 150px; /* Adjust size */
+    height: 150px; /* Match width for circular shape */
+    object-fit: cover; /* Ensures the image fits */
+    border: 3px solid #004d99; /* Border matches theme */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+    margin-bottom: 10px;
+}
+
+.profile-container p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 10px;
 }
 
 footer {
@@ -31,4 +53,20 @@ footer {
     padding: 1rem;
     background-color: #004d99;
     color: white;
+}
+
+/* Utility: Styling for section headings */
+section h2 {
+    color: #004d99;
+    margin-bottom: 10px;
+}
+
+/* Utility: Style for links within sections */
+section a {
+    color: #004d99;
+    text-decoration: none;
+}
+
+section a:hover {
+    text-decoration: underline;
 }
