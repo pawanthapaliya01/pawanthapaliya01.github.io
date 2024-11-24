@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,179 +6,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawan Thapaliya | Computational Neuroscientist</title>
     <style>
-        /* Reset CSS */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
         body {
             font-family: Arial, sans-serif;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-            color: #333;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
         }
-        
-        /* Navigation Bar */
-        nav {
-            background-color: #005f73;
-            padding: 15px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            padding: 10px;
-        }
-        
-        nav a:hover {
-            background-color: #0a9396;
-            border-radius: 5px;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        h2 {
-            color: #005f73;
-            margin-bottom: 10px;
-        }
-        
-        ul {
-            list-style: disc inside;
-            margin: 15px 0;
-        }
-        
-        .section {
-            margin-bottom: 30px;
-        }
-        
-        .button {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #0a9396;
-            color: #fff;
+
+        header {
+            background-color: #004d99;
+            color: white;
+            padding: 1rem;
             text-align: center;
-            border-radius: 5px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
             text-decoration: none;
-            margin-top: 20px;
         }
-        
-        .button:hover {
-            background-color: #028090;
+
+        section {
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        
+
         footer {
             text-align: center;
-            padding: 10px;
-            background-color: #005f73;
-            color: #fff;
-            margin-top: 40px;
+            padding: 1rem;
+            background-color: #004d99;
+            color: white;
         }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            nav {
-                flex-direction: column;
-                align-items: flex-start;
-            }
+
+        /* Profile Picture Styling */
+        .profile-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .profile-photo {
+            border-radius: 50%; /* Circular picture */
+            width: 150px; /* Adjust size */
+            height: 150px; /* Match width for circular shape */
+            object-fit: cover; /* Ensures the image fits */
+            border: 3px solid #004d99; /* Border matches theme */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
 
-<!-- Navigation Bar -->
-<nav>
-    <a href="#about">About Me</a>
-    <a href="#research">Research Interests</a>
-    <a href="#current">Current Research</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-</nav>
+<header>
+    <h1>Welcome to Pawan Thapaliya's Website</h1>
+</header>
 
-<div class="container">
-    <!-- Profile Picture Section -->
-    <div class="section" id="profile">
-        <h2>Profile</h2>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Pawan Thapaliya Profile" class="profile-photo" />
-            <p>
-                Hi, I'm <strong>Pawan Thapaliya</strong>. A passionate PhD candidate specializing in computational neuroscience, focused on understanding brain dynamics through innovative computational and biophysical modeling.
-            </p>
-        </div>
-    </div>
-    <!-- About Me Section -->
-    <div class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-            Hi, I'm <strong>Pawan Thapaliya</strong>, a PhD candidate in <strong>Applied Physics</strong> with a specialization in <strong>Computational Neuroscience</strong>. 
-            My research focuses on understanding the complex interactions between neuronal and non-neuronal cells under metabolic stress conditions, particularly in the context of ischemic events, epilepsy, and neurodegenerative diseases.
-        </p>
-    </div>
+<!-- Profile Section -->
+<section class="profile-container">
+    <img src="images/profile.jpg" alt="Pawan Thapaliya" class="profile-photo" />
+    <p>
+        Hi, I'm <strong>Pawan Thapaliya</strong>, a Computational Neuroscientist. Passionate about developing models to explore brain dynamics and solve complex neurological challenges.
+    </p>
+</section>
 
-    <!-- Research Interests Section -->
-    <div class="section" id="research">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Computational modeling of astrocyte function during ischemia</li>
-            <li>Neuroinformatics and brain-computer interfaces</li>
-            <li>Machine learning applications in EEG signal analysis</li>
-            <li>Translational research in stroke, epilepsy, and Alzheimer's disease</li>
-        </ul>
-    </div>
+<!-- About Me Section -->
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a PhD candidate in <strong>Applied Physics</strong> with a specialization in <strong>Computational Neuroscience</strong>. 
+        My research focuses on understanding the complex interactions between neuronal and non-neuronal cells under metabolic stress conditions, particularly in the context of ischemic events, epilepsy, and neurodegenerative diseases.
+    </p>
+</section>
 
-    <!-- Current Research Section -->
-    <div class="section" id="current">
-        <h2>Current Research</h2>
-        <p>
-            At <strong>Dr. Ullah's Biophysics Lab</strong>, I'm developing detailed <strong>Markov models</strong> to simulate ion dynamics in astrocytes, focusing on sodium and calcium signaling during chemical ischemia.
-        </p>
-    </div>
+<!-- Research Interests Section -->
+<section>
+    <h2>Research Interests</h2>
+    <ul>
+        <li>Computational modeling of astrocyte function during ischemia</li>
+        <li>Neuroinformatics and brain-computer interfaces</li>
+        <li>Machine learning applications in EEG signal analysis</li>
+        <li>Translational research in stroke, epilepsy, and Alzheimer's disease</li>
+    </ul>
+</section>
 
-    <!-- Projects Section -->
-    <div class="section" id="projects">
-        <h2>Recent Projects</h2>
-        <ul>
-            <li>Biophysical modeling of NMDA and AMPA receptor activation</li>
-            <li>Analysis of astrocytic sodium dynamics using single-cell simulations</li>
-            <li>Predictive modeling of ATP consumption in neocortical vs. hippocampal astrocytes</li>
-        </ul>
-    </div>
+<!-- Current Research Section -->
+<section>
+    <h2>Current Research</h2>
+    <p>
+        At <strong>Dr. Ullah's Biophysics Lab</strong>, I'm developing detailed <strong>Markov models</strong> to simulate ion dynamics in astrocytes, focusing on sodium and calcium signaling during chemical ischemia.
+    </p>
+</section>
 
-    <!-- Skills Section -->
-    <div class="section" id="skills">
-        <h2>Skills and Expertise</h2>
-        <ul>
-            <li><strong>Programming and Tools:</strong> Python (NumPy, SciPy, TensorFlow, Keras, PyTorch), Fortran, Matlab, Kaggle</li>
-            <li><strong>Computational Techniques:</strong> Single-cell modeling, Markov kinetics, differential equations, digital signal processing</li>
-            <li><strong>Machine Learning:</strong> LSTM, SVM, data analysis, feature extraction from EEG signals</li>
-            <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Pandas, NeuroPy</li>
-        </ul>
-    </div>
+<!-- Projects Section -->
+<section>
+    <h2>Recent Projects</h2>
+    <ul>
+        <li>Biophysical modeling of NMDA and AMPA receptor activation</li>
+        <li>Analysis of astrocytic sodium dynamics using single-cell simulations</li>
+        <li>Predictive modeling of ATP consumption in neocortical vs. hippocampal astrocytes</li>
+    </ul>
+</section>
 
-    <!-- Contact Section -->
-    <div class="section" id="contact">
-        <h2>Contact Me</h2>
-        <p>If you're interested in collaborating or have a position that aligns with my skills, please feel free to reach out!</p>
-        <p>Email: <a href="mailto:YourEmail@example.com">pkthapaliya@usf.edu</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/Pawan-thapaliya-2a7377125" target="_blank">https://www.linkedin.com/in/pawan-thapaliya-2a7377125/</a></p>
-        <p>GitHub: <a href="https://github.com/pawanthapaliya01" target="_blank">pawanthapaliya01</a></p>
-        <a class="button" href="https://drive.google.com/file/d/1yCpXaCk3j6u6qbFvI_KPBUNNrCy8g5HM/view?usp=sharing" target="_blank">Download My Resume (PDF)</a>
-    </div>
-</div>
+<!-- Skills Section -->
+<section>
+    <h2>Skills and Expertise</h2>
+    <ul>
+        <li><strong>Programming and Tools:</strong> Python (NumPy, SciPy, TensorFlow, Keras, PyTorch), Fortran, Matlab, Kaggle</li>
+        <li><strong>Computational Techniques:</strong> Single-cell modeling, Markov kinetics, differential equations, digital signal processing</li>
+        <li><strong>Machine Learning:</strong> LSTM, SVM, data analysis, feature extraction from EEG signals</li>
+        <li><strong>Data Visualization:</strong> Matplotlib, Seaborn, Pandas, NeuroPy</li>
+    </ul>
+</section>
 
-<!-- Footer -->
+<!-- Contact Section -->
+<section>
+    <h2>Contact Me</h2>
+    <p>If you're interested in collaborating or have a position that aligns with my skills, please feel free to reach out!</p>
+    <p>Email: <a href="mailto:pkthapaliya@usf.edu">pkthapaliya@usf.edu</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/Pawan-thapaliya-2a7377125" target="_blank">https://www.linkedin.com/in/pawan-thapaliya-2a7377125/</a></p>
+    <p>GitHub: <a href="https://github.com/pawanthapaliya01" target="_blank">pawanthapaliya01</a></p>
+    <a class="button" href="https://drive.google.com/file/d/1yCpXaCk3j6u6qbFvI_KPBUNNrCy8g5HM/view?usp=sharing" target="_blank">Download My Resume (PDF)</a>
+</section>
+
 <footer>
     <p>&copy; 2024 Pawan Thapaliya. All rights reserved.</p>
 </footer>
