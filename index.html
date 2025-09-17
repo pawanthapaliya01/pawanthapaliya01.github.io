@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pawan Thapaliya | Computational Neuroscientist</title>
-<style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan Thapaliya | Computational Neuroscientist</title>
+
+  <!-- Font Awesome (for social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -50,19 +54,25 @@
     section.active {
         display: block; /* only active section is shown */
     }
-</style>
-</head>
-<body>
 
-<header>
-    <h1>Pawan Thapaliya</h1>
-    <nav>
-        <button class="tab-btn active" data-tab="about">About</button>
-        <button class="tab-btn" data-tab="publications">Publications</button>
-        <button class="tab-btn" data-tab="projects">Projects</button>
-        <button class="tab-btn" data-tab="cv">CV</button>
-    </nav>
-</header>
+    /* Optional styling for social links */
+    .social-links {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .social-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.2);
+    }
+  </style>
+</head>
 
 <!-- About -->
 <section id="about" class="active">
