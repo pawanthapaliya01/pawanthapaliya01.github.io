@@ -9,16 +9,13 @@
         font-family: Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f9;
+        background: #f4f4f9;
     }
 
     header {
-        background-color: #004d99;
+        background: #004d99;
         color: white;
         padding: 1rem;
-        position: sticky;
-        top: 0;
-        z-index: 1000;
         text-align: center;
     }
 
@@ -27,7 +24,7 @@
     }
 
     nav button {
-        background-color: #004d99;
+        background: #004d99;
         border: none;
         color: white;
         padding: 10px 20px;
@@ -37,155 +34,79 @@
         border-radius: 5px;
     }
 
-    nav button:hover {
-        background-color: #003366;
-    }
-
     nav button.active {
-        background-color: #002244;
+        background: #002244;
     }
 
     section {
-        display: none;
+        display: none; /* hide all sections */
         margin: 20px;
         padding: 20px;
-        background-color: white;
+        background: white;
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
 
     section.active {
-        display: block;
-    }
-
-    .profile-container {
-        text-align: center;
-        margin: 20px 0;
-    }
-
-    .profile-photo {
-        border-radius: 50%;
-        width: 150px;
-        height: 150px;
-        object-fit: cover;
-        border: 3px solid #004d99;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        margin-bottom: 10px;
-    }
-
-    .button {
-        display: inline-block;
-        padding: 10px 20px;
-        background-color: #004d99;
-        color: white;
-        text-decoration: none;
-        border-radius: 5px;
-        margin-top: 10px;
-    }
-
-    .button:hover {
-        background-color: #003366;
-    }
-
-    .skills-list {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    .skills-list li {
-        margin-bottom: 10px;
-    }
-
-    @media screen and (max-width: 768px) {
-        .profile-photo {
-            width: 120px;
-            height: 120px;
-        }
-        nav button {
-            padding: 8px 12px;
-            margin: 0 2px;
-        }
+        display: block; /* only active section is shown */
     }
 </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to Pawan Thapaliya's Website</h1>
+    <h1>Pawan Thapaliya</h1>
     <nav>
         <button class="tab-btn active" data-tab="about">About</button>
-        <button class="tab-btn" data-tab="projects">Projects</button>
         <button class="tab-btn" data-tab="publications">Publications</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
         <button class="tab-btn" data-tab="cv">CV</button>
-        <button class="tab-btn" data-tab="search">Search</button>
     </nav>
 </header>
 
-<!-- About Section -->
+<!-- About -->
 <section id="about" class="active">
-    <div class="profile-container">
-        <img src="https://avatars.githubusercontent.com/u/22973244?s=400&u=b899ea3e6434d81212329de2486d3c39de1bccee&v=4" class="profile-photo" alt="Profile Photo" />
-        <p>Ion Channels, pH Regulation, Glutamatergic Synapse, Neuronal Excitability, Metabolic stress, and Bioenergetics modeling.</p>
-    </div>
     <h2>About Me</h2>
-    <p>Hey there, thanks for stopping by! 👋 I’m <strong>Pawan Kumar Thapaliya</strong>, a <strong>PhD candidate in Applied Physics</strong> focusing on astrocyte physiology, ionic homeostasis, and energy metabolism in the brain. I combine computational modeling and experiments to understand how astrocytes support neurons and protect against excitotoxicity.</p>
+    <p>This is the About section. By default, only this shows.</p>
 </section>
 
-<!-- Projects Section -->
-<section id="projects">
-    <h2>Projects</h2>
-    <ul>
-        <li>
-            <strong>Astrocytic Sodium and Calcium Homeostasis:</strong> During my PhD, I developed a detailed computational model of astrocytic Na⁺ and Ca²⁺ dynamics, integrating NMDA/AMPA receptor fluxes, ion transporters, and energy metabolism. My model reproduced experimental observations, predicted region-specific differences between cortex and hippocampus, and revealed that higher NMDA receptor expression in cortical astrocytes drives larger Na⁺/Ca²⁺ transients and ATP consumption. <a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity" target="_blank">GitHub</a>
-        </li>
-        <li><a href="https://github.com/pawanthapaliya01/NBC" target="_blank">Sodium Bicarbonate Transporter 1 during chemical ischemia</a></li>
-        <li><a href="https://github.com/pawanthapaliya01/BRAIN_MRI_Tumor_Classification" target="_blank">Brain MRI Tumor Classification</a></li>
-    </ul>
-</section>
-
-<!-- Publications Section -->
+<!-- Publications -->
 <section id="publications">
     <h2>Publications</h2>
-    <ul>
-        <li>Paper 1: Astrocytic ion homeostasis in cortex vs hippocampus</li>
-        <li>Paper 2: NBCe1 transporter roles in ischemia</li>
-        <li>Paper 3: Brain MRI tumor classification using deep learning</li>
-    </ul>
+    <p>Your publication list here.</p>
 </section>
 
-<!-- CV Section -->
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+    <p>Your project details here.</p>
+</section>
+
+<!-- CV -->
 <section id="cv">
-    <h2>CV / Resume</h2>
-    <p><a class="button" href="https://drive.google.com/file/d/1dYSY3_J3k8ddfNrYfaYyrL29ft_DocB_/view?usp=sharing" target="_blank">Download My Resume (PDF)</a></p>
-</section>
-
-<!-- Search Section -->
-<section id="search">
-    <h2>Search</h2>
-    <p>Search functionality can be added here.</p>
+    <h2>CV</h2>
+    <a href="your_cv_link_here.pdf" target="_blank">Download My CV</a>
 </section>
 
 <footer>
-    <p>&copy; 2024 Pawan Thapaliya. All rights reserved.</p>
+    <p>&copy; 2024 Pawan Thapaliya</p>
 </footer>
 
 <script>
     const buttons = document.querySelectorAll('.tab-btn');
     const sections = document.querySelectorAll('section');
 
-    buttons.forEach(button => {
-        button.addEventListener('click', () => {
-            const tab = button.getAttribute('data-tab');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // remove active from all buttons
+            buttons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
 
-            // Remove active class from all buttons
-            buttons.forEach(btn => btn.classList.remove('active'));
-            button.classList.add('active');
-
-            // Hide all sections
+            // hide all sections
             sections.forEach(sec => sec.classList.remove('active'));
 
-            // Show the clicked section
-            document.getElementById(tab).classList.add('active');
+            // show the clicked section
+            document.getElementById(btn.dataset.tab).classList.add('active');
         });
     });
 </script>
