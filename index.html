@@ -21,7 +21,7 @@
         color: white;
         padding: 1rem;
         text-align: center;
-        position: sticky; /* keeps header on top */
+        position: sticky; 
         top: 0;
         z-index: 1000;
     }
@@ -51,7 +51,7 @@
     }
 
     section {
-        display: none; /* hide all sections */
+        display: none; 
         margin: 20px;
         padding: 20px;
         background: white;
@@ -60,7 +60,7 @@
     }
 
     section.active {
-        display: block; /* only active section is shown */
+        display: block; 
     }
 
     footer {
@@ -71,7 +71,6 @@
         color: white;
     }
 
-    /* Social links */
     .social-links {
         margin-top: 20px;
         text-align: center;
@@ -86,6 +85,33 @@
 
     .social-links a:hover {
         transform: scale(1.2);
+    }
+
+    /* CV Sidebar */
+    .sidebar button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        background: #004d99;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .sidebar button.active {
+        background: #002244;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
     }
   </style>
 </head>
@@ -148,29 +174,21 @@
     Outside of research, I enjoy <strong>running</strong>, <strong>reading</strong>, 
     <strong>gaming</strong>, and spending time with <strong>friends and family</strong>. 
     Want to dive deeper? Check out my <a href="#projects">projects</a> or 
-    <a href="#cv">CV</a>.
+    <a href="cv/Pawan_Thapaliya_CV.pdf" download>download my CV</a>.
   </p>
 
-  <!-- Social Links Section -->
   <div style="margin-top:20px; text-align:center;">
     <h3>Connect with me</h3>
     <div style="font-size: 2em; margin-top:10px;">
-      <!-- Email -->
       <a href="mailto:pkthapaliya@usf.edu" target="_blank" style="margin: 0 15px; color:#333;">
         <i class="fas fa-envelope"></i>
       </a>
-
-      <!-- ORCID -->
       <a href="https://orcid.org/0009-0005-5749-6371" target="_blank" style="margin: 0 15px; color:#a6ce39;">
         <i class="fab fa-orcid"></i>
       </a>
-
-      <!-- GitHub -->
       <a href="https://github.com/pawanthapaliya01" target="_blank" style="margin: 0 15px; color:#333;">
         <i class="fab fa-github"></i>
       </a>
-
-      <!-- LinkedIn -->
       <a href="https://www.linkedin.com/in/pawan-thapaliya-2a7377125/" target="_blank" style="margin: 0 15px; color:#0A66C2;">
         <i class="fab fa-linkedin"></i>
       </a>
@@ -182,7 +200,6 @@
 <section id="publications">
   <h2>Publications</h2>
 
-  <!-- Publication 1 -->
   <div class="publication-item">
     <h3>Modeling the heterogeneity of sodium and calcium homeostasis between cortical and hippocampal astrocytes and its impact on bioenergetics</h3>
     <p><em>P. Thapaliya, N. Pape, C. R. Rose, G. Ullah</em> — Frontiers in Cellular Neuroscience, 2023.</p>
@@ -193,7 +210,6 @@
     </div>
   </div>
 
-  <!-- Publication 2 -->
   <div class="publication-item">
     <h3>Inward Operation of Sodium‑Bicarbonate Cotransporter 1 Promotes Astrocytic Na+ Loading and Loss of ATP in Mouse Neocortex during Brief Chemical Ischemia</h3>
     <p><em>(Authors)</em> — Cells, 2023; 12(23):2675.</p>
@@ -203,7 +219,6 @@
       <p class="fig-caption">Key result. NBCe1‑mediated Na⁺ loading and ATP loss. <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a></p>
     </div>
   </div>
-
 </section>
 
 <!-- Projects -->
@@ -211,62 +226,35 @@
     <h2>Projects</h2>
 
     <h3>Project 1: Astrocytic Na⁺ Homeostasis and Neuron-Astrocyte Interaction</h3>
-    <p>
-        This is the first project of my doctoral thesis. In this work, I developed a detailed computational model of astrocytic sodium (Na⁺) and calcium (Ca²⁺) dynamics in cortical and hippocampal astrocytes. 
-        I incorporated experimental data on NMDA and AMPA receptor activity, glutamate transport, and intracellular ion fluxes. My model reproduced observed changes in astrocytic sodium under different pharmacological conditions and predicted how Na⁺ homeostasis affects calcium signaling, glutamate uptake, and energy metabolism. 
-        One key finding was that cortical astrocytes, due to higher NMDA receptor expression, experience higher ATP consumption under high activity compared to hippocampal astrocytes, which we confirmed experimentally. 
-        This work provided new insights into the regional heterogeneity of astrocytic function and their role in protecting neurons against excitotoxicity. 
-        <a href="https://www.frontiersin.org/articles/10.3389/fncel.2023.1035553/full" target="_blank">[PDF]</a>
-    </p>
+    <p>…project description… <a href="https://www.frontiersin.org/articles/10.3389/fncel.2023.1035553/full" target="_blank">[PDF]</a></p>
 
     <h3>Project 2: NBCe1 Activity in Astrocytes During Chemical Ischemia</h3>
-    <p>
-        In my second project, I investigated the role of the sodium-bicarbonate cotransporter NBCe1 in astrocytes under brief chemical ischemia. Using organotypic mouse cortical slices, I measured intracellular pH and sodium dynamics with and without NBCe1 inhibition, and in NBCe1 knockout mice. 
-        I found that NBCe1 contributes to sodium influx and mitigates intracellular acidification, but also increases ATP consumption under metabolic stress. 
-        My experimental observations were supported by a biophysical model that predicted the inward activity of NBCe1 during ischemia and its effects on astrocytic sodium, pH, and energy balance. 
-        These results suggest that NBCe1 has both protective (preventing acidosis) and potentially harmful (increasing energy demand) roles in ischemic conditions. 
-        <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a>
-    </p>
+    <p>…project description… <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a></p>
 
     <h3>Project 3: Neuron- and Astrocyte-Specific NCX Roles During Spreading Depolarizations</h3>
-    <p>
-        The third project focused on the Na⁺/Ca²⁺ exchanger (NCX) in neurons and astrocytes during spreading depolarizations following stroke. I combined experimental data with a computational model to examine how deletion of NCX1 in either cell type affects calcium, sodium, and extracellular glutamate dynamics. 
-        I discovered that neuronal NCX reverse-mode activity contributes to detrimental calcium overload and lowers the threshold for spreading depolarizations, while astrocytic NCX reverse-mode activity is protective, reducing extracellular glutamate and calcium influx into neurons. 
-        This project highlighted the cell-type-specific roles of NCX and their implications for neuronal survival after stroke, emphasizing the need to consider these differences when targeting NCX therapeutically. 
-        <a href="#" target="_blank">[PDF link for your manuscript]</a>
-    </p>
+    <p>…project description… <a href="#" target="_blank">[PDF link for your manuscript]</a></p>
 
     <h3>Project 4: Isoform-Specific Na⁺/K⁺-ATPase and Baseline Sodium in Astrocytic Ionic and pH Dynamics</h3>
-    <p>
-        In my fourth project, I examined how baseline intracellular sodium and isoform composition of Na⁺/K⁺-ATPase shape astrocytic sodium, calcium, and pH dynamics under both physiological and ischemic conditions. 
-        Using compartmental modeling and isoform-specific pump kinetics, I found that alpha2beta2 subunits maintain lower sodium and respond sharply to perturbations, whereas alpha2beta1 subunits tolerate higher sodium but are more vulnerable under metabolic stress. 
-        Baseline sodium strongly gated calcium accumulation via NCX and NBCe1, while pH dynamics reflected the balance between NBCe1-driven alkalinization and NHE-driven acidification. 
-        These findings reveal how spatial heterogeneity and isoform diversity create microdomains of resilience or vulnerability in astrocytes, with implications for ischemia, spreading depolarization, and brain injury. 
-        <a href="#" target="_blank">[PDF link for your manuscript]</a>
-    </p>
-
+    <p>…project description… <a href="#" target="_blank">[PDF link for your manuscript]</a></p>
 </section>
 
 <!-- CV -->
-<!-- CV Section -->
-<section id="cv" style="height: 600px; display: flex; flex-direction: row;">
-    <!-- Sidebar Tabs -->
+<section id="cv" style="display: flex; flex-direction: row;">
     <div class="sidebar" style="width: 220px; background-color: #f5f5f5; border-right: 1px solid #ddd; padding: 20px; box-sizing: border-box;">
         <h2>Menu</h2>
         <button class="tab-btn active" data-tab="resume">Resume / CV</button>
         <button class="tab-btn" data-tab="experience">Experience</button>
         <button class="tab-btn" data-tab="education">Education</button>
         <button class="tab-btn" data-tab="skills">Skills</button>
-        <button class="tab-btn" data-tab="publications">Publications</button>
+        <button class="tab-btn" data-tab="cv_publications">Publications</button>
         <button class="tab-btn" data-tab="awards">Awards</button>
         <button class="tab-btn" data-tab="activities">Professional Activities</button>
     </div>
 
-    <!-- Content -->
     <div class="content" style="flex: 1; padding: 20px; overflow-y: auto;">
         <div id="resume" class="tab-content active">
             <h2>Resume / CV</h2>
-            <p><a href="your_cv_link_here.pdf" target="_blank">Download My CV</a></p>
+            <p><a href="cv/Pawan_Thapaliya_CV.pdf" download>Download My CV</a></p>
             <p>PhD-trained researcher in Applied Physics with expertise in computational neuroscience, modeling astrocyte and neuron responses to metabolic stress including ischemic stroke and epilepsy.</p>
         </div>
 
@@ -300,7 +288,7 @@
             </ul>
         </div>
 
-        <div id="publications" class="tab-content">
+        <div id="cv_publications" class="tab-content">
             <h2>Publications</h2>
             <ul>
                 <li><strong>Thapaliya, P.</strong> et al. (2023). Modeling sodium and calcium homeostasis in astrocytes. <a href="https://doi.org/10.3389/fncel.2023.1035553">Front. Cell. Neurosci.</a> | <a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity">Code</a></li>
@@ -333,35 +321,386 @@
 </footer>
 
 <script>
-    const buttons = document.querySelectorAll('.tab-btn');
-    const sections = document.querySelectorAll('section');
+    // Top navigation tabs
+    const topButtons = document.querySelectorAll('header nav .tab-btn');
+    const topSections = document.querySelectorAll('section');
 
-    buttons.forEach(btn => {
+    topButtons.forEach(btn => {
         btn.addEventListener('click', () => {
-            // remove active from all buttons
-            buttons.forEach(b => b.classList.remove('active'));
+            topButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
-            // hide all sections
-            sections.forEach(sec => sec.classList.remove('active'));
-
-            // show the clicked section
+            topSections.forEach(sec => sec.classList.remove('active'));
             document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+    });
+
+    // CV sidebar tabs
+    const cvButtons = document.querySelectorAll('#cv .sidebar .tab-btn');
+    const cvContents = document.querySelectorAll('#cv .tab-content');
+
+    cvButtons.forEach(tab => {
+        tab.addEventListener('click', () => {
+            cvButtons.forEach(t => t.classList.remove('active'));
+            tab.classList.add('active');
+
+            const target = tab.getAttribute('data-tab');
+            cvContents.forEach(c => c.classList.remove('active'));
+            document.getElementById(target).classList.add('active');
         });
     });
 </script>
 
-<script>
-    const tabs = document.querySelectorAll('.tab-btn');
-    const contents = document.querySelectorAll('.tab-content');
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawan Thapaliya | Computational Neuroscientist</title>
 
-    tabs.forEach(tab => {
+  <!-- Font Awesome (for social icons) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: #f4f4f9;
+    }
+
+    header {
+        background: #004d99;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+        position: sticky; 
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav button {
+        background: #004d99;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        margin: 0 5px;
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    nav button:hover {
+        background: #003366;
+    }
+
+    nav button.active {
+        background: #002244;
+    }
+
+    section {
+        display: none; 
+        margin: 20px;
+        padding: 20px;
+        background: white;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    section.active {
+        display: block; 
+    }
+
+    footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        background: #004d99;
+        color: white;
+    }
+
+    .social-links {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 2em;
+    }
+
+    .social-links a {
+        margin: 0 15px;
+        text-decoration: none;
+        transition: transform 0.2s;
+    }
+
+    .social-links a:hover {
+        transform: scale(1.2);
+    }
+
+    /* CV Sidebar */
+    .sidebar button {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+        background: #004d99;
+        border: none;
+        color: white;
+        padding: 10px;
+        text-align: left;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    .sidebar button.active {
+        background: #002244;
+    }
+
+    .tab-content {
+        display: none;
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Pawan Thapaliya | Computational Neuroscientist</h1>
+  <nav>
+    <button class="tab-btn active" data-tab="about">About</button>
+    <button class="tab-btn" data-tab="publications">Publications</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="cv">CV</button>
+  </nav>
+</header>
+
+<!-- About -->
+<section id="about" class="active">
+  <h2>About Me</h2>
+  <img src="your_profile_pic.jpeg" alt="Pawan Thapaliya" style="width:150px;height:150px;border-radius:50%;margin-bottom:15px;">
+  <p>Hey there, thanks for stopping by! 👋</p>
+
+  <p>
+    I’m <strong>Pawan Kumar Thapaliya</strong>, a Physicist and PhD candidate in 
+    <strong>Computational Neurobiology</strong> at the University of South Florida, 
+    working in <strong>Dr. Ghanim Ullah’s lab</strong>. My research revolves around 
+    taking complex cellular physiology and translating it into <strong>mathematical 
+    models</strong> and <strong>computational frameworks</strong> to understand brain function.
+  </p>
+
+  <p>
+    I currently lead projects in <strong>computational neuroscience and biophysics</strong>, 
+    focusing on <strong>astrocytic ion dynamics</strong>, <strong>energy metabolism</strong>, 
+    and <strong>neuronal excitability</strong> under both healthy and pathological conditions 
+    like <strong>stroke</strong> and <strong>ischemia</strong>. My work combines:
+  </p>
+
+  <ul>
+    <li><strong>Biophysical modeling</strong> of astrocytic sodium, calcium, and ATP dynamics.</li>
+    <li><strong>Systems biology approaches</strong> to dissect the roles of NMDA/AMPA receptors, NBCe1, and NCX1 in ionic and metabolic balance.</li>
+    <li><strong>Computational–experimental integration</strong>, validating predictions with 
+        brain slice electrophysiology, FRET-based ATP imaging, and ion-selective measurements.</li>
+  </ul>
+
+  <p>
+    In past projects, I showed that cortical astrocytes experience higher sodium 
+    transients and ATP consumption than hippocampal astrocytes, revealed how 
+    NBCe1 activity buffers pH at the cost of higher energy demand, and highlighted 
+    the protective role of astrocytic NCX1 during spreading depolarizations. 
+    These insights bring us closer to understanding region-specific vulnerability 
+    in brain energy metabolism and excitotoxicity.
+  </p>
+
+  <p>
+    Broadly, I’m fascinated by <strong>astrocytic physiology</strong>, 
+    <strong>computational modeling</strong>, and <strong>neuroenergetics</strong>, and 
+    how these areas can help us design new therapeutic strategies for neurological disorders.
+  </p>
+
+  <p>
+    Outside of research, I enjoy <strong>running</strong>, <strong>reading</strong>, 
+    <strong>gaming</strong>, and spending time with <strong>friends and family</strong>. 
+    Want to dive deeper? Check out my <a href="#projects">projects</a> or 
+    <a href="cv/Pawan_Thapaliya_CV.pdf" download>download my CV</a>.
+  </p>
+
+  <div style="margin-top:20px; text-align:center;">
+    <h3>Connect with me</h3>
+    <div style="font-size: 2em; margin-top:10px;">
+      <a href="mailto:pkthapaliya@usf.edu" target="_blank" style="margin: 0 15px; color:#333;">
+        <i class="fas fa-envelope"></i>
+      </a>
+      <a href="https://orcid.org/0009-0005-5749-6371" target="_blank" style="margin: 0 15px; color:#a6ce39;">
+        <i class="fab fa-orcid"></i>
+      </a>
+      <a href="https://github.com/pawanthapaliya01" target="_blank" style="margin: 0 15px; color:#333;">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/pawan-thapaliya-2a7377125/" target="_blank" style="margin: 0 15px; color:#0A66C2;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Publications -->
+<section id="publications">
+  <h2>Publications</h2>
+
+  <div class="publication-item">
+    <h3>Modeling the heterogeneity of sodium and calcium homeostasis between cortical and hippocampal astrocytes and its impact on bioenergetics</h3>
+    <p><em>P. Thapaliya, N. Pape, C. R. Rose, G. Ullah</em> — Frontiers in Cellular Neuroscience, 2023.</p>
+    <a href="https://doi.org/10.3389/fncel.2023.1035553" target="_blank">[PDF]</a>
+    <div class="pub-figure">
+      <img src="figures/paper1_figure1.png" alt="Figure 1" style="max-width:100%;height:auto;">
+      <p class="fig-caption">Figure 1. Model schematic and main ion/glutamate fluxes. <a href="https://doi.org/10.3389/fncel.2023.1035553" target="_blank">[PDF]</a></p>
+    </div>
+  </div>
+
+  <div class="publication-item">
+    <h3>Inward Operation of Sodium‑Bicarbonate Cotransporter 1 Promotes Astrocytic Na+ Loading and Loss of ATP in Mouse Neocortex during Brief Chemical Ischemia</h3>
+    <p><em>(Authors)</em> — Cells, 2023; 12(23):2675.</p>
+    <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a>
+    <div class="pub-figure">
+      <img src="figures/paper2_keyfigure.png" alt="Key figure" style="max-width:100%;height:auto;">
+      <p class="fig-caption">Key result. NBCe1‑mediated Na⁺ loading and ATP loss. <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+    <h2>Projects</h2>
+
+    <h3>Project 1: Astrocytic Na⁺ Homeostasis and Neuron-Astrocyte Interaction</h3>
+    <p>…project description… <a href="https://www.frontiersin.org/articles/10.3389/fncel.2023.1035553/full" target="_blank">[PDF]</a></p>
+
+    <h3>Project 2: NBCe1 Activity in Astrocytes During Chemical Ischemia</h3>
+    <p>…project description… <a href="https://www.mdpi.com/2073-4409/12/23/2675" target="_blank">[PDF]</a></p>
+
+    <h3>Project 3: Neuron- and Astrocyte-Specific NCX Roles During Spreading Depolarizations</h3>
+    <p>…project description… <a href="#" target="_blank">[PDF link for your manuscript]</a></p>
+
+    <h3>Project 4: Isoform-Specific Na⁺/K⁺-ATPase and Baseline Sodium in Astrocytic Ionic and pH Dynamics</h3>
+    <p>…project description… <a href="#" target="_blank">[PDF link for your manuscript]</a></p>
+</section>
+
+<!-- CV -->
+<section id="cv" style="display: flex; flex-direction: row;">
+    <div class="sidebar" style="width: 220px; background-color: #f5f5f5; border-right: 1px solid #ddd; padding: 20px; box-sizing: border-box;">
+        <h2>Menu</h2>
+        <button class="tab-btn active" data-tab="resume">Resume / CV</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="cv_publications">Publications</button>
+        <button class="tab-btn" data-tab="awards">Awards</button>
+        <button class="tab-btn" data-tab="activities">Professional Activities</button>
+    </div>
+
+    <div class="content" style="flex: 1; padding: 20px; overflow-y: auto;">
+        <div id="resume" class="tab-content active">
+            <h2>Resume / CV</h2>
+            <p><a href="cv/Pawan_Thapaliya_CV.pdf" download>Download My CV</a></p>
+            <p>PhD-trained researcher in Applied Physics with expertise in computational neuroscience, modeling astrocyte and neuron responses to metabolic stress including ischemic stroke and epilepsy.</p>
+        </div>
+
+        <div id="experience" class="tab-content">
+            <h2>Experience</h2>
+            <ul>
+                <li><strong>PhD Candidate / Researcher</strong> – University of South Florida, Tampa, FL (2019–Present)</li>
+                <li><strong>Quantitative MRI & Deep Learning Intern</strong> – Moffitt Cancer Center, Tampa, FL (2025–Present)</li>
+                <li><strong>Adjunct Instructor / TA</strong> – University of South Florida (2020–2023)</li>
+            </ul>
+        </div>
+
+        <div id="education" class="tab-content">
+            <h2>Education</h2>
+            <ul>
+                <li>Ph.D., Applied Physics – University of South Florida (2019–2026)</li>
+                <li>M.S., Physics – University of Texas Rio Grande Valley (2016–2019)</li>
+                <li>MSc., Physics – Tribhuvan University (2009–2011)</li>
+                <li>BSc., Physics – Trichendra College, Tribhuvan University (2006–2009)</li>
+            </ul>
+        </div>
+
+        <div id="skills" class="tab-content">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li><strong>Programming:</strong> Python, R, MATLAB, SQL, Bash, FORTRAN</li>
+                <li><strong>Modeling & Math:</strong> Biophysical modeling, Markov models, neural dynamics</li>
+                <li><strong>Machine Learning:</strong> PyTorch, TensorFlow, Keras, scikit-learn</li>
+                <li><strong>Libraries:</strong> NumPy, SciPy, MNE-Python, OpenCV, Pandas, Matplotlib, Seaborn</li>
+                <li><strong>Signal & Image Processing:</strong> EEG analysis, image segmentation, neural circuit modeling</li>
+            </ul>
+        </div>
+
+        <div id="cv_publications" class="tab-content">
+            <h2>Publications</h2>
+            <ul>
+                <li><strong>Thapaliya, P.</strong> et al. (2023). Modeling sodium and calcium homeostasis in astrocytes. <a href="https://doi.org/10.3389/fncel.2023.1035553">Front. Cell. Neurosci.</a> | <a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity">Code</a></li>
+                <li>Everaerts, K., <strong>Thapaliya, P.</strong> et al. (2023). Sodium-bicarbonate cotransporter 1 in astrocytes. <a href="https://doi.org/10.3390/cells12232675">Cells</a> | <a href="https://github.com/pawanthapaliya01/NBC">Code</a></li>
+            </ul>
+        </div>
+
+        <div id="awards" class="tab-content">
+            <h2>Awards</h2>
+            <ul>
+                <li>Trainee Professional Development Award, Society for Neuroscience, Oct 2024</li>
+                <li>Signature Doctoral Research Fellowship, University of South Florida, Aug 2024 – Jul 2026</li>
+                <li>Tharp and Duckwall Summer Research Fellowship, University of South Florida, May 2024 – Aug 2024</li>
+            </ul>
+        </div>
+
+        <div id="activities" class="tab-content">
+            <h2>Professional Activities</h2>
+            <ul>
+                <li>Grand Award Judge, Regeneron International Science and Engineering Fair, May 2024</li>
+                <li>Conference Poster Judge: USF Health Research Day, Mar 2024 & Feb 2025</li>
+                <li>Reviewer: Cellular Signaling, Journal of Theoretical Biology</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Pawan Thapaliya</p>
+</footer>
+
+<script>
+    // Top navigation tabs
+    const topButtons = document.querySelectorAll('header nav .tab-btn');
+    const topSections = document.querySelectorAll('section');
+
+    topButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            topButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            topSections.forEach(sec => sec.classList.remove('active'));
+            document.getElementById(btn.dataset.tab).classList.add('active');
+        });
+    });
+
+    // CV sidebar tabs
+    const cvButtons = document.querySelectorAll('#cv .sidebar .tab-btn');
+    const cvContents = document.querySelectorAll('#cv .tab-content');
+
+    cvButtons.forEach(tab => {
         tab.addEventListener('click', () => {
-            tabs.forEach(t => t.classList.remove('active'));
+            cvButtons.forEach(t => t.classList.remove('active'));
             tab.classList.add('active');
 
             const target = tab.getAttribute('data-tab');
-            contents.forEach(c => c.classList.remove('active'));
+            cvContents.forEach(c => c.classList.remove('active'));
             document.getElementById(target).classList.add('active');
         });
     });
