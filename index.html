@@ -37,6 +37,7 @@
             margin: 0 15px;
             text-decoration: none;
             font-weight: bold;
+            cursor: pointer;
         }
 
         nav a:hover {
@@ -93,6 +94,11 @@
             margin-bottom: 10px;
         }
 
+        /* Hide all tab sections by default */
+        .tab-section {
+            display: none;
+        }
+
         /* Responsive Design */
         @media screen and (max-width: 768px) {
             section {
@@ -112,9 +118,9 @@
 <header>
     <h1>Welcome to Pawan Thapaliya's Website</h1>
     <nav>
-        <a href="#publications">Publications/Projects</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">CV / Contact</a>
+        <a onclick="showSection('projects')">Publications/Projects</a>
+        <a onclick="showSection('skills')">Skills</a>
+        <a onclick="showSection('contact')">CV / Contact</a>
     </nav>
 </header>
 
@@ -131,28 +137,17 @@
     <h2>About Me</h2>
     <p>Hey there, thanks for stopping by! 👋</p>
 
-    <p>I’m <strong>Pawan Kumar Thapaliya</strong>, a <strong>PhD candidate in Applied Physics at the Biophysics Lab of Dr. Ghanim Ullah, Department of Physics, University of South Florida, conducting research in Neuroscience and Computational Neurobiology</strong>. My research focuses on understanding how <strong>astrocytes</strong> — the brain’s support cells — manage ionic balance, energy use, and signaling under stress, like during <strong>stroke</strong> and <strong>ischemia</strong>. Essentially, I combine biology and math to figure out how sodium, calcium, and pH dynamics in astrocytes influence brain health and vulnerability.</p>
+    <p>I’m <strong>Pawan Kumar Thapaliya</strong>, a <strong>PhD candidate in Applied Physics at the Biophysics Lab of Dr. Ghanim Ullah, Department of Physics, University of South Florida</strong>. My research focuses on understanding how <strong>astrocytes</strong> — the brain’s support cells — manage ionic balance, energy use, and signaling under stress, such as during <strong>stroke</strong> and <strong>ischemia</strong>. Essentially, I combine biology and math to figure out how sodium, calcium, and pH dynamics in astrocytes influence brain health and vulnerability.</p>
 
-    <p>I currently lead projects where I integrate <strong>computational modeling</strong> and <strong>experimental validation</strong> to uncover cell- and region-specific mechanisms in astrocytes. My methods include:</p>
+    <p>I currently lead projects integrating <strong>computational modeling</strong> and <strong>experimental validation</strong> to uncover cell- and region-specific mechanisms in astrocytes. My methods include:</p>
 
     <ul>
-        <li><strong>Computational modeling</strong> of astrocytic sodium (Naa), calcium, and ATP dynamics under neuronal activity and metabolic stress.</li>
-        <li><strong>Experimental validation</strong> using brain slices and in vivo mouse models with ion and glutamate reporters, FRET-based ATP imaging, patch-clamp recordings, and ion-selective microelectrodes.</li>
-        <li>Dissecting the roles of key transporters and receptors such as <strong>NMDA/AMPA receptors</strong>, <strong>NBCe1</strong>, and <strong>NCX1</strong> in regulating energy metabolism, ionic homeostasis, and excitotoxicity.</li>
+        <li><strong>Computational modeling:</strong> Astrocytic sodium (Naa), calcium, and ATP dynamics under neuronal activity and metabolic stress.</li>
+        <li><strong>Experimental validation:</strong> Brain slices and in vivo mouse models with ion and glutamate reporters, FRET-based ATP imaging, patch-clamp recordings, and ion-selective microelectrodes.</li>
+        <li>Studying transporters and receptors such as <strong>NMDA/AMPA receptors</strong>, <strong>NBCe1</strong>, and <strong>NCX1</strong> in regulating energy metabolism, ionic homeostasis, and excitotoxicity.</li>
     </ul>
-
-    <p>Some highlights from my work include:</p>
-    <ul>
-        <li>Showing that cortical astrocytes have larger sodium transients than hippocampal astrocytes, driven by NMDA and AMPA receptor activity, leading to higher ATP consumption.</li>
-        <li>Revealing that NBCe1 helps buffer acidosis but increases sodium influx and energy demand during ischemia.</li>
-        <li>Demonstrating that neuronal NCX1 worsens calcium overload and glutamate release, whereas astrocytic NCX1 stabilizes ionic balance, protecting the tissue during spreading depolarizations.</li>
-    </ul>
-
-    <p>Broadly, I’m interested in <strong>computational neuroscience</strong>, <strong>astrocytic physiology</strong>, and <strong>brain energy metabolism</strong>, especially how modeling and experiments together can reveal mechanisms that might guide future stroke therapies.</p>
 
     <p>Outside of research, I enjoy <strong>running</strong>, <strong>reading</strong>, <strong>gaming</strong>, and spending time with <strong>friends and family</strong>.</p>
-
-    <p>Want to dive deeper? Check out my <a href="#publications">publications/projects</a> here.</p>
 </section>
 
 <!-- Research Interests Section -->
@@ -171,24 +166,31 @@
 <section>
     <h2>Current Research</h2>
     <p>
-      I am developing computational models to explain the role of astroglial NCX during spreading depolarization (SD). 
-      Additionally, I am studying the effects of low and high potassium on sodium baseline variations. 
-      Finally, I am investigating the reversibility of EAAT2 during severe stroke conditions.
+        I am developing computational models to explain the role of astroglial NCX during spreading depolarization (SD). 
+        Additionally, I am studying the effects of low and high potassium on sodium baseline variations. 
+        Finally, I am investigating the reversibility of EAAT2 during severe stroke conditions.
     </p>
 </section>
 
-<!-- Publications / Projects Section -->
-<section id="publications">
+<!-- Publications / Projects Section (Tab) -->
+<section id="projects" class="tab-section">
     <h2>Recent Projects / Publications</h2>
     <ul>
-        <li><a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity" target="_blank" rel="noopener noreferrer">Biophysical modeling of NMDA and AMPA receptor activation</a></li>
-        <li><a href="https://github.com/pawanthapaliya01/NBC" target="_blank" rel="noopener noreferrer">Inward Operation of Sodium Bicarbonate transporter 1 during chemical ischemia</a></li>
-        <li><a href="https://github.com/pawanthapaliya01/BRAIN_MRI_Tumor_Classification" target="_blank" rel="noopener noreferrer">Brain MRI Tumor Classification</a></li>
+        <li>
+            <strong>Astrocytic Sodium and Calcium Homeostasis:</strong> During my PhD, I developed a detailed computational model of astrocytic Na⁺ and Ca²⁺ dynamics, integrating NMDA/AMPA receptor fluxes, ion transporters, and energy metabolism. My model reproduced experimental observations, predicted region-specific differences between cortex and hippocampus, and revealed that higher NMDA receptor expression in cortical astrocytes drives larger Na⁺/Ca²⁺ transients and ATP consumption. This work highlights the critical role of astrocytic ion regulation in neuronal support and excitotoxicity protection. 
+            <a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </li>
+        <li>
+            <a href="https://github.com/pawanthapaliya01/NBC" target="_blank" rel="noopener noreferrer">Inward Operation of Sodium Bicarbonate transporter 1 during chemical ischemia</a>
+        </li>
+        <li>
+            <a href="https://github.com/pawanthapaliya01/BRAIN_MRI_Tumor_Classification" target="_blank" rel="noopener noreferrer">Brain MRI Tumor Classification</a>
+        </li>
     </ul>
 </section>
 
-<!-- Skills Section -->
-<section id="skills">
+<!-- Skills Section (Tab) -->
+<section id="skills" class="tab-section">
     <h2>Skills and Expertise</h2>
     <ul class="skills-list">
         <li><strong>Programming and Tools:</strong> Python (NumPy, SciPy, TensorFlow, Keras, PyTorch), Fortran, Matlab, Kaggle</li>
@@ -199,8 +201,8 @@
     </ul>
 </section>
 
-<!-- Contact / CV Section -->
-<section id="contact">
+<!-- Contact / CV Section (Tab) -->
+<section id="contact" class="tab-section">
     <h2>Contact Me / CV</h2>
     <p>If you're interested in collaborating or have a position that aligns with my skills, please feel free to reach out!</p>
     <p>Email: <a href="mailto:pkthapaliya@usf.edu">pkthapaliya@usf.edu</a></p>
@@ -212,6 +214,17 @@
 <footer>
     <p>&copy; 2024 Pawan Thapaliya. All rights reserved.</p>
 </footer>
+
+<script>
+    function showSection(sectionId) {
+        const sections = document.querySelectorAll('.tab-section');
+        sections.forEach(sec => sec.style.display = 'none'); // hide all
+        document.getElementById(sectionId).style.display = 'block'; // show clicked
+    }
+
+    // Optionally, show Projects tab by default
+    showSection('projects');
+</script>
 
 </body>
 </html>
