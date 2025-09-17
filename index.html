@@ -21,6 +21,9 @@
         color: white;
         padding: 1rem;
         text-align: center;
+        position: sticky; /* keeps header on top */
+        top: 0;
+        z-index: 1000;
     }
 
     nav {
@@ -36,6 +39,11 @@
         font-weight: bold;
         cursor: pointer;
         border-radius: 5px;
+        transition: background 0.3s;
+    }
+
+    nav button:hover {
+        background: #003366;
     }
 
     nav button.active {
@@ -55,7 +63,15 @@
         display: block; /* only active section is shown */
     }
 
-    /* Optional styling for social links */
+    footer {
+        text-align: center;
+        padding: 15px;
+        margin-top: 40px;
+        background: #004d99;
+        color: white;
+    }
+
+    /* Social links */
     .social-links {
         margin-top: 20px;
         text-align: center;
@@ -73,6 +89,17 @@
     }
   </style>
 </head>
+<body>
+
+<header>
+  <h1>Pawan Thapaliya | Computational Neuroscientist</h1>
+  <nav>
+    <button class="tab-btn active" data-tab="about">About</button>
+    <button class="tab-btn" data-tab="publications">Publications</button>
+    <button class="tab-btn" data-tab="projects">Projects</button>
+    <button class="tab-btn" data-tab="cv">CV</button>
+  </nav>
+</header>
 
 <!-- About -->
 <section id="about" class="active">
@@ -123,34 +150,33 @@
     Want to dive deeper? Check out my <a href="#projects">projects</a> or 
     <a href="#cv">CV</a>.
   </p>
-    <!-- Social Links Section -->
-<div style="margin-top:20px; text-align:center;">
-  <h3>Connect with me</h3>
-  <div style="font-size: 2em; margin-top:10px;">
-    <!-- Email -->
-    <a href="mailto:pkthapaliya@usf.edu" target="_blank" style="margin: 0 15px; color:#333;">
-      <i class="fas fa-envelope"></i>
-    </a>
 
-    <!-- ORCID -->
-    <a href="https://orcid.org/0009-0005-5749-6371" target="_blank" style="margin: 0 15px; color:#a6ce39;">
-      <i class="fab fa-orcid"></i>
-    </a>
+  <!-- Social Links Section -->
+  <div style="margin-top:20px; text-align:center;">
+    <h3>Connect with me</h3>
+    <div style="font-size: 2em; margin-top:10px;">
+      <!-- Email -->
+      <a href="mailto:pkthapaliya@usf.edu" target="_blank" style="margin: 0 15px; color:#333;">
+        <i class="fas fa-envelope"></i>
+      </a>
 
-    <!-- GitHub -->
-    <a href="https://github.com/pawanthapaliya01" target="_blank" style="margin: 0 15px; color:#333;">
-      <i class="fab fa-github"></i>
-    </a>
+      <!-- ORCID -->
+      <a href="https://orcid.org/0009-0005-5749-6371" target="_blank" style="margin: 0 15px; color:#a6ce39;">
+        <i class="fab fa-orcid"></i>
+      </a>
 
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/pawan-thapaliya-2a7377125/" target="_blank" style="margin: 0 15px; color:#0A66C2;">
-      <i class="fab fa-linkedin"></i>
-    </a>
+      <!-- GitHub -->
+      <a href="https://github.com/pawanthapaliya01" target="_blank" style="margin: 0 15px; color:#333;">
+        <i class="fab fa-github"></i>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/pawan-thapaliya-2a7377125/" target="_blank" style="margin: 0 15px; color:#0A66C2;">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </div>
   </div>
-</div>
 </section>
-
-
 
 <!-- Publications -->
 <section id="publications">
