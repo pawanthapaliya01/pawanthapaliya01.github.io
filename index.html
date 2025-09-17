@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pawan Thapaliya | Computational Neuroscientist</title>
     <style>
+        /* General Styles */
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling */
+        }
+
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,19 +17,33 @@
             background-color: #f4f4f9;
         }
 
+        /* Header and Navigation */
         header {
             background-color: #004d99;
             color: white;
             padding: 1rem;
             text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            margin-top: 10px;
         }
 
         nav a {
             color: white;
             margin: 0 15px;
             text-decoration: none;
+            font-weight: bold;
         }
 
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section Styling */
         section {
             margin: 20px;
             padding: 20px;
@@ -33,26 +52,19 @@
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
 
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #004d99;
-            color: white;
-        }
-
-        /* Profile Picture Styling */
+        /* Profile Picture */
         .profile-container {
             text-align: center;
             margin: 20px 0;
         }
 
         .profile-photo {
-            border-radius: 50%; /* Circular picture */
-            width: 150px; /* Adjust size */
-            height: 150px; /* Match width for circular shape */
-            object-fit: cover; /* Ensures the image fits */
-            border: 3px solid #004d99; /* Border matches theme */
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Optional shadow */
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 3px solid #004d99;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
             margin-bottom: 10px;
         }
 
@@ -71,7 +83,7 @@
             background-color: #003366;
         }
 
-        /* Skills List Styling */
+        /* Skills List */
         .skills-list {
             list-style-type: none;
             padding-left: 0;
@@ -99,13 +111,18 @@
 
 <header>
     <h1>Welcome to Pawan Thapaliya's Website</h1>
+    <nav>
+        <a href="#publications">Publications/Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">CV / Contact</a>
+    </nav>
 </header>
 
 <!-- Profile Section -->
 <section class="profile-container">
-    <img src="https://avatars.githubusercontent.com/u/22973244?s=400&u=b899ea3e6434d81212329de2486d3c39de1bccee&v=4" class="profile-photo" />
+    <img src="https://avatars.githubusercontent.com/u/22973244?s=400&u=b899ea3e6434d81212329de2486d3c39de1bccee&v=4" class="profile-photo" alt="Profile Photo" />
     <p>
-     Ion Channels, pH Regulation, Glutamatergic Synapse, Neuronal Excitability, Metabolic stress, and Bioenergetics modeling.
+        Ion Channels, pH Regulation, Glutamatergic Synapse, Neuronal Excitability, Metabolic stress, and Bioenergetics modeling.
     </p>
 </section>
 
@@ -135,7 +152,7 @@
 
     <p>Outside of research, I enjoy <strong>running</strong>, <strong>reading</strong>, <strong>gaming</strong>, and spending time with <strong>friends and family</strong>.</p>
 
-    <p>Want to dive deeper? Check out my <a href="[publications/projects]">publications/projects</a> here.</p>
+    <p>Want to dive deeper? Check out my <a href="#publications">publications/projects</a> here.</p>
 </section>
 
 <!-- Research Interests Section -->
@@ -149,32 +166,26 @@
         <li>Integration of machine learning and data analysis techniques in neuroscience research and drug discovery</li>
     </ul>
 </section>
-    
 
 <!-- Current Research Section -->
 <section>
     <h2>Current Research</h2>
-    <ul>
-        <p>
-          I am developing computational models to explain the role of astroglial NCX during spreading depolarization (SD). 
-          Additionally, I am studying the effects of low and high potassium on sodium baseline variations. 
-          Finally, I am investigating the reversibility of EAAT2 during severe stroke conditions.
-        </p> 
-    </ul>
+    <p>
+      I am developing computational models to explain the role of astroglial NCX during spreading depolarization (SD). 
+      Additionally, I am studying the effects of low and high potassium on sodium baseline variations. 
+      Finally, I am investigating the reversibility of EAAT2 during severe stroke conditions.
+    </p>
 </section>
 
-
-<!-- Projects Section -->
-<section>
-    <h2>Recent Projects</h2>
+<!-- Publications / Projects Section -->
+<section id="publications">
+    <h2>Recent Projects / Publications</h2>
     <ul>
         <li><a href="https://github.com/pawanthapaliya01/Astrocytes_heterogeneity" target="_blank" rel="noopener noreferrer">Biophysical modeling of NMDA and AMPA receptor activation</a></li>
-        <li><a href="https://github.com/pawanthapaliya01/NBC" target="_blank" rel="noopener noreferrer">Inward Operation of Sodium Bicarbonate transporter 1 during checmial ishcemia</a></li>
+        <li><a href="https://github.com/pawanthapaliya01/NBC" target="_blank" rel="noopener noreferrer">Inward Operation of Sodium Bicarbonate transporter 1 during chemical ischemia</a></li>
         <li><a href="https://github.com/pawanthapaliya01/BRAIN_MRI_Tumor_Classification" target="_blank" rel="noopener noreferrer">Brain MRI Tumor Classification</a></li>
     </ul>
 </section>
-
-
 
 <!-- Skills Section -->
 <section id="skills">
@@ -188,9 +199,9 @@
     </ul>
 </section>
 
-<!-- Contact Section -->
-<section>
-    <h2>Contact Me</h2>
+<!-- Contact / CV Section -->
+<section id="contact">
+    <h2>Contact Me / CV</h2>
     <p>If you're interested in collaborating or have a position that aligns with my skills, please feel free to reach out!</p>
     <p>Email: <a href="mailto:pkthapaliya@usf.edu">pkthapaliya@usf.edu</a></p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/Pawan-thapaliya-2a7377125" target="_blank">https://www.linkedin.com/in/pawan-thapaliya-2a7377125/</a></p>
@@ -204,6 +215,3 @@
 
 </body>
 </html>
-
-
-
